@@ -2,23 +2,35 @@
   "name": "ghost-on-heroku",
   "description": "Just a blogging platform on Heroku.",
   "license": "MIT",
+  "main": ".eleventy.js",
+  "scripts": {
+    "start": "node server.js",
+    "build": "cross-env ELEVENTY_ENV=prod eleventy"
+  },
   "repository": {
     "type": "git",
-    "url": "git://github.com/cobyism/ghost-on-heroku.git"
+    "url": "git://github.com/jspargo/ghost-on-heroku.git"
   },
   "bugs": "https://github.com/TryGhost/Ghost/issues",
   "private": true,
   "version": "1.25.5",
   "dependencies": {
-    "casper": "github:tryghost/Casper#2.1.9",
+    "@11ty/eleventy": "^0.9.0",
+    "@11ty/eleventy-plugin-rss": "^1.0.6",
+    "@tryghost/content-api": "^1.2.5",
+    "@tryghost/helpers": "^1.1.6",
+    "cross-env": "^5.2.1",
     "ghost": "^2.30.2",
     "ghost-storage-adapter-s3": "^2.3.0",
-    "mysql": "^2.14.1"
+    "mysql": "^2.14.1",
+    "clean-css": "^4.2.1",
+    "dotenv": "^8.0.0",
+    "eleventy-plugin-lazyimages": "liamfiddler/eleventy-plugin-lazyimages",
+    "eleventy-plugin-local-images": "^0.3.0",
+    "eslint-utils": "1.4.2",
+    "html-minifier": "^4.0.0"
   },
   "engines": {
     "node": "10.x"
-  },
-  "scripts": {
-    "start": "node server.js"
   }
 }
