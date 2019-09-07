@@ -3,7 +3,9 @@
   "description": "Just a blogging platform on Heroku.",
   "license": "MIT",
   "scripts": {
-    "start": "node server.js"
+    "start": "forever start server.js",
+    "build": "gssg --domain 'http://localhost:2368' --url 'https://www.letssewbelfast.com' --dest 'static'",
+    "stop": "forever stop server.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,7 @@
     "@tryghost/helpers": "^1.1.6",
     "casper": "github:tryghost/Casper#2.1.9",
     "cross-env": "^5.2.1",
+    "forever": "^1.0.0",
     "ghost": "^2.30.2",
     "ghost-storage-adapter-s3": "^2.3.0",
     "ghost-static-site-generator": "^1.0.1",

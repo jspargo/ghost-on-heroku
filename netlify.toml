@@ -1,5 +1,5 @@
 [build]
-  command = "./start.sh"
+  command = "npm start && sleep 5s && gssg --domain 'http://localhost:2368' --url 'https://www.letssewbelfast.com' --dest static"
   publish = "static/"
 
 [template]
