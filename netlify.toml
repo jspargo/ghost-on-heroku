@@ -1,5 +1,5 @@
 [build]
-  command = "npm dev && npm static"
+  command = "npm run dev && npm run static"
   publish = "static"
 
 [template]
