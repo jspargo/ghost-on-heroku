@@ -5,7 +5,7 @@
   "scripts": {
     "start": "node server.js",
     "dev": "forever start server.js && sleep 5s",
-    "build": "gssg --domain 'http://localhost:2368' --url 'https://www.letssewbelfast.com' --dest 'static'",
+    "static": "gssg --domain 'http://localhost:2368' --url 'https://www.letssewbelfast.com' --dest 'static'",
     "stop": "forever stop server.js"
   },
   "repository": {
