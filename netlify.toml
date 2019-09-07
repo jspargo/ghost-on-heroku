@@ -1,6 +1,6 @@
 [build]
-  command = "npm run dev && npm run static"
-  publish = "static"
+  command = "npm run dev && npm run static && npm run stop"
+  publish = "static/"
 
 [template]
   incoming-hooks = ["Ghost"]
