@@ -2,7 +2,6 @@
   "name": "ghost-on-heroku",
   "description": "Just a blogging platform on Heroku.",
   "license": "MIT",
-  "main": ".eleventy.js",
   "scripts": {
     "start": "node server.js"
   },
@@ -16,9 +15,11 @@
   "dependencies": {
     "@tryghost/content-api": "^1.2.5",
     "@tryghost/helpers": "^1.1.6",
+    "casper": "github:tryghost/Casper#2.1.9",
     "cross-env": "^5.2.1",
     "ghost": "^2.30.2",
     "ghost-storage-adapter-s3": "^2.3.0",
+    "ghost-static-site-generator": "^1.0.1",
     "mysql": "^2.14.1",
     "clean-css": "^4.2.1",
     "dotenv": "^8.0.0",
