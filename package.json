@@ -5,7 +5,7 @@
   "scripts": {
     "start": "node server.js",
     "dev": "forever start server.js && sleep 5s",
-    "static": "gssg --url https://www.letssewbelfast.com --fail-on-error",
+    "static": "gssg --url https://www.letssewbelfast.com",
     "stop": "forever stop server.js"
   },
   "repository": {
