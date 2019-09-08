@@ -1,5 +1,5 @@
 [build]
-  command = "npm run dev && mkdir static && npm run static && npm run stop"
+  command = "./start.sh"
   publish = "static/"
 
 [template]
