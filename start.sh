@@ -10,7 +10,7 @@ echo "Start Ghost local server (and wait)"
 npm run dev
 
 echo "Run 'ghost-static-site-generator' 🚀"
-gssg --url 'https://www.letssewbelfast.com'
+gssg --url https://www.letssewbelfast.com
 
 echo "Kill Ghost local server"
 npm run stop
